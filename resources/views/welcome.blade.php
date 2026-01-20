@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Yann</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        
-
-        <!-- Styles -->
-      
-    </head>
-        <body>
-            <h1>Mon Blog</h1>
-        </body>
-        
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ $title ?? 'À propos' }}</title>
+</head>
+<body>
+  <h1>À propos</h1>
+ 
+ 
+  <nav>
+    <a href="{{ route('home') }}">Accueil</a> |
+    <a href="{{ route('about') }}">À propos</a>
+  </nav>
+ 
+</body>
 </html>

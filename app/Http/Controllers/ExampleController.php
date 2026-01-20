@@ -1,16 +1,17 @@
 <?php
-
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-
-
+ 
 class ExampleController extends Controller
 {
-    Public function homepage(){
-        return view('homepage');
+public function home()
+    {
+        return view('home', ['title' => 'Accueil']);
     }
-    Public function AboutPage(){
-        return view('about');
+ 
+public function about()
+    {
+        return view('about', ['title' => 'À propos']);
     }
 }
+
+ 

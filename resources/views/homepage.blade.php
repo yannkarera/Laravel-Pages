@@ -9,11 +9,6 @@
     <a href="{{ route('home') }}">Accueil</a> |
     <a href="{{ route('about') }}">À propos</a>
   </nav>
-  <h2>{{ $name }}</h2>
-  <ul>
-    @foreach($allFruits as $fruit)
-      <li>{{ $fruit}}</li>
-    @endforeach
-  </ul>
+  
 </body>
 </html>
