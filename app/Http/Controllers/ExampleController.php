@@ -3,9 +3,9 @@ namespace App\Http\Controllers;
  
 class ExampleController extends Controller
 {
-public function home()
+public function homepage()
     {
-        return view('home', ['title' => 'Accueil']);
+        return view('homepage', ['title' => 'Accueil']);
     }
  
 public function about()

@@ -1,14 +1,17 @@
-<!doctype html>
-<html lang="fr">
-<head><meta charset="utf-8">
-  <title>{{ $title ?? 'Accueil' }}</title>
-</head>
-<body>
-  <h1>Homepage</h1>
-  <nav>
-    <a href="{{ route('home') }}">Accueil</a> |
-    <a href="{{ route('about') }}">À propos</a>
-  </nav>
-  
-</body>
-</html>
+@include('header')
+
+<div class="container py-5">
+  <h2>Bienvenue sur mon blog</h2>
+  <p>Ceci est la page d'accueil publique du projet d’atelier.</p>
+
+  <p class="mt-3">
+    Dans les prochains chapitres, nous allons :
+  </p>
+  <ul>
+    <li>ajouter un système d’authentification simple ;</li>
+    <li>créer des articles de blog ;</li>
+    <li>afficher les articles sur cette page.</li>
+  </ul>
+</div>
+
+@include('footer')
