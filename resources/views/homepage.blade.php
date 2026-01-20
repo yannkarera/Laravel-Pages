@@ -4,6 +4,10 @@
   <h2>Bienvenue sur mon blog</h2>
   <p>Ceci est la page d'accueil publique du projet d’atelier.</p>
 
+  <form action="/register" method="POST" id="registration-form">
+    @csrf
+  </form>
+
   <p class="mt-3">
     Dans les prochains chapitres, nous allons :
   </p>
